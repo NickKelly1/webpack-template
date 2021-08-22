@@ -1,0 +1,65 @@
+{
+  "name": "webpack-template",
+  "author": "Nick Kelly",
+  "description": "Batteries included template for Webpack projects",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config config/jest.config.ts",
+    "build": "webpack --config config/webpack.config.ts --progress --mode=production",
+    "build:dev": "webpack --config config/webpack.config.ts --progress --mode=development",
+    "analyze": "webpack --config config/webpack.config.ts --progress --mode=production --env analyze",
+    "dev": "webpack serve --config config/webpack.config.ts --progress --mode=development",
+    "upgrade": "npm-check --update",
+    "lint": "eslint . --ext '*/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "eslint . --ext '*/**/*.{js,jsx,ts,tsx}' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/NickKelly1/covid-19"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "data"
+  ],
+  "devDependencies": {
+    "@jest/types": "^27.0.6",
+    "@nkp/config": "^0.0.7",
+    "@types/copy-webpack-plugin": "^8.0.1",
+    "@types/jest": "^27.0.1",
+    "@types/mini-css-extract-plugin": "^2.2.0",
+    "@types/node": "^16.6.1",
+    "@types/postcss-preset-env": "^6.7.3",
+    "@types/webpack-bundle-analyzer": "^4.4.1",
+    "@types/webpack-dev-server": "^3.11.5",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.2.0",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "handlebars": "^4.7.7",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.0.6",
+    "mini-css-extract-plugin": "^2.2.0",
+    "npm-check": "^5.9.2",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "ts-jest": "^27.0.4",
+    "ts-loader": "^9.2.5",
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5",
+    "webpack": "^5.50.0",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

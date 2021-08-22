@@ -1,0 +1,148 @@
+@import "~normalize.css/normalize.css";
+@import './navbar.scss';
+@import './topbar.scss';
+
+@import './variables';
+
+// luam
+@font-face {
+  font-family: Luam;
+  src: url('../assets/fonts/Luam-Regular.otf');
+}
+@font-face {
+  font-family: Luam;
+  src: url('../assets/fonts/Luam-Bold.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: Luam;
+  src: url('../assets/fonts/Luam-Bold.otf');
+  font-weight: lighter;
+}
+
+// open sans
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Italic.ttf');
+  font-style: italic;
+}
+
+// bold
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-BoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+// bolder
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-ExtraBold.ttf');
+  font-weight: bolder;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-ExtraBoldItalic.ttf');
+  font-weight: bolder;
+  font-style: italic;
+}
+
+// light
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Light.ttf');
+  font-weight: lighter;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-LightItalic.ttf');
+  font-weight: lighter;
+  font-style: italic;
+}
+
+:root {
+  font-size: $font-size;
+  font-family: $font-family;
+}
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+.chevron-right {
+    position: relative;
+    display: inline-block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
+
+.chevron-right::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(-45deg);
+    left: 4px;
+    top: 2px
+}
+
+.chevron-down {
+    position: relative;
+    display: inline-block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
+
+.chevron-down::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    left: 4px;
+    top: 2px
+}
+
+.ws-nowrap {
+  white-space: nowrap;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.stretch {
+  height: 100%;
+}
+
+.wide {
+  width: 100%;
+}
